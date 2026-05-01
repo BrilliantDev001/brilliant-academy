@@ -12,13 +12,15 @@ body {
 }
 
 /* Navbar */
-.navbar {
+#navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
   background: #fff;
+  width: 100%;
   border-bottom: 1px solid #0a7d2c;
+  position: fixed;
 }
 
 nav div a img {
@@ -62,6 +64,7 @@ nav div a img {
 #nav-btn:hover {
   color: black;
 }
+
 .btn-outline {
   padding: 8px 16px;
   border: 1px solid #0a7d2c;
@@ -77,14 +80,14 @@ nav div a img {
 }
 
 /* Hero */
-.hero {
+#hero {
   background-image: url("media/hero2.png");
   background-size: 100% 100%;
   padding: 50px 100px;
   height: 550px;
 }
 
-.hero .start {
+#hero .start {
   display: block;
   font-size: 15px;
   color: #0a7d2c;
@@ -93,26 +96,26 @@ nav div a img {
   text-transform: uppercase;
 }
 
-.hero .start + h1 {
+#hero .start + h1 {
   /* margin-left: -93px; */
   color: #666;
 }
 
-.hero .head {
+#hero .head {
   font-size: 36px;
   margin-bottom: 15px;
   /* margin-left: 70px; */
   color: #0a7d2c;
 }
 
-.hero .p-tag {
+#hero .p-tag {
   display: block;
   max-width: 600px;
   margin: 20px 20px 20px 0;
   color: #666;
 }
 
-.hero .aside {
+#hero .aside {
   display: flex;
   justify-content: space-evenly;
   width: 800px;
@@ -241,7 +244,7 @@ nav div a img {
 }
 
 /* about */
-.about {
+#about {
   display: flex;
   flex-wrap: wrap;
   /* flex-direction: column; */
@@ -260,7 +263,7 @@ nav div a img {
   }
 }
 
-.about h2 {
+#about h2 {
   width: 100%;
   display: block;
   text-align: center;
@@ -410,6 +413,68 @@ nav div a img {
     }
   }
 }
+
+#testimonials {
+  padding: 60px 100px;
+
+  > h4 {
+    text-align: center;
+    color: #0a7d2c;
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  
+}
+
+.card > p {
+    color: #666;
+    font-size: 15px;
+    margin-top: 30px;
+    /* max-width: 500px; */
+    /* margin: 0 auto; */
+    text-align: center;
+  }
+
+  .card h3 {
+    color: #0a7d2c;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .card aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    /* background-color: red; */
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      background-color: #e9e5e5;
+
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+      }
+    }
+  }
 
 footer {
   padding: 30px;
