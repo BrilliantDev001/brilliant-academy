@@ -1,18 +1,27 @@
-* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
 
-    body { background: #f5f5f5; color: #333; }
+body {
+  background: #f5f5f5;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
 
-    /* Navbar */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 40px;
-      background: #fff;
-      border-bottom: 1px solid #0a7d2c;
-    }
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background: #fff;
+  border-bottom: 1px solid #0a7d2c;
+}
 
-    nav div a img {
+nav div a img {
   width: 100px;
   height: 90px;
   display: flex;
@@ -20,32 +29,49 @@
   border-radius: 10px 10px;
 }
 
-    .nav-links a {
-      margin-left: 25px;
-      text-decoration: none;
-      color: #333;
-    }
+.nav-links a {
+  height: 80px;
+  margin-left: 25px;
+  text-decoration: none;
+  color: #333;
+}
 
-    .nav-links a:hover { color: #0a7d2c; }
+.nav-links a:hover {
+  color: #0a7d2c;
+}
 
-    #btn {
-      padding: 8px 16px;
-      background: #0a7d2c;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
+.btn {
+  padding: 8px 16px;
+  background: #0a7d2c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  /* margin-left: 65px; */
+}
 
-    #btn-outline {
-      padding: 8px 16px;
-      border: 1px solid #0a7d2c;
-      color: #0a7d2c;
-      background: transparent;
-      border-radius: 6px;
-      cursor: pointer;
-    }
+#nav-btn {
+  padding: 8px 16px;
+  background: #0a7d2c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
-    #btn:hover {
-      color: black;
-    }
+#nav-btn:hover {
+  color: black;
+}
+.btn-outline {
+  padding: 8px 16px;
+  border: 1px solid #0a7d2c;
+  color: #0a7d2c;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.btn:hover {
+  color: black;
+}
