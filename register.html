@@ -14,58 +14,58 @@
 
 <body>
 
-<!-- Navbar -->
-<nav class="navbar">
-    <div><a href="index.html"><img src="media/Brilliant Academy Logo .png" alt="GeegStack Academy logo"></a></div>
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="courses.html">Courses</a>
-        <a href="#">Testimonials</a>
-        <a href="#">Contact</a>
-        <!-- <button class="btn">Enroll</button> -->
-        <a href="register.html" id="btn">Enroll</a>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div><a href="index.html"><img src="media/Brilliant Academy Logo .png" alt="GeegStack Academy logo"></a></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="index.html#testimonials">Testimonials</a>
+            <a href="index.html#contact">Contact</a>
+            <!-- <button class="btn">Enroll</button> -->
+            <a href="register.html" id="btn">Enroll</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h2>Become a Student</h2>
+
+            <div class="input-group">
+                <input type="text" placeholder="Full Name">
+            </div>
+
+            <div class="input-group">
+                <input type="text" placeholder="Username">
+            </div>
+
+            <div class="input-group">
+                <input type="text" placeholder="Student ID">
+            </div>
+
+            <div class="input-group">
+                <input type="password" placeholder="Password">
+            </div>
+
+            <div class="input-group">
+                <input type="text" placeholder="Referral Code (Optional)">
+            </div>
+
+            <a href="#"><button class="btn-primary">Enroll</button></a>
+
+
+            <div class="footer-text">
+                Already a student? <a href="login.html">Login</a>
+            </div>
+        </div>
     </div>
-</nav>
-
-<div class="container">
-    <div class="card">
-        <h2>Become a Student</h2>
-
-        <div class="input-group">
-            <input type="text" placeholder="Full Name">
-        </div>
-
-        <div class="input-group">
-            <input type="text" placeholder="Username">
-        </div>
-
-        <div class="input-group">
-            <input type="text" placeholder="Student ID">
-        </div>
-
-        <div class="input-group">
-            <input type="password" placeholder="Password">
-        </div>
-
-        <div class="input-group">
-            <input type="text" placeholder="Referral Code (Optional)">
-        </div>
-
-        <a href="#"><button class="btn-primary">Enroll</button></a>
-        
-
-        <div class="footer-text">
-            Already a student? <a href="login.html">Login</a>
-        </div>
-    </div>
-</div>
 
     <footer>
         <p>&copy; Copyright GEEGSTACK STORE.</P>
     </footer>
 
-<!-- <nav>
+    <!-- <nav>
     <a href="index.html"><img src="media/Screenshot_2026-04-24_194521-removebg-preview.png"
             alt="GeegStack Academy logo"></a>
     <div class="nav-links">
@@ -137,7 +137,7 @@
     }
 
     const enrollButton = document.querySelector(".btn-primary");
-    enrollButton.addEventListener("click", function(event) {
+    enrollButton.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent form submission
         alert("Your account has been successfully created, you can now login to continue!");
         // Redirect to login page after showing the alert
@@ -145,21 +145,22 @@
     });
 
     const loginLink = document.querySelector(".footer-text a");
-    loginLink.addEventListener("click", function(event) {
+    loginLink.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent default link behavior
         window.location.href = "login.html"; // Redirect to login page
     });
 
     const inputFields = document.querySelectorAll(".input-group input");
-    enrollButton.addEventListener("click", function(event) {
+    enrollButton.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent form submission
 
         let allFieldsFilled = true;
-        inputFields.forEach(function(input) {
+        inputFields.forEach(function (input) {
             if (input.value.trim() === "") {
                 allFieldsFilled = false;
             }
         });
     });
 </script>
+
 </html>
